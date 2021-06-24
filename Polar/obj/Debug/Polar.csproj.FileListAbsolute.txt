@@ -1,0 +1,10 @@
+C:\Users\PressFtoPayRespeck\Source\Repos\PseudoPolar\bin\Debug\Polar.exe.config
+C:\Users\PressFtoPayRespeck\Source\Repos\PseudoPolar\bin\Debug\Polar.exe
+C:\Users\PressFtoPayRespeck\Source\Repos\PseudoPolar\bin\Debug\Polar.pdb
+C:\Users\PressFtoPayRespeck\Source\Repos\PseudoPolar\obj\Debug\Polar.csproj.AssemblyReference.cache
+C:\Users\PressFtoPayRespeck\Source\Repos\PseudoPolar\obj\Debug\Polar.Form1.resources
+C:\Users\PressFtoPayRespeck\Source\Repos\PseudoPolar\obj\Debug\Polar.Properties.Resources.resources
+C:\Users\PressFtoPayRespeck\Source\Repos\PseudoPolar\obj\Debug\Polar.csproj.GenerateResource.cache
+C:\Users\PressFtoPayRespeck\Source\Repos\PseudoPolar\obj\Debug\Polar.csproj.CoreCompileInputs.cache
+C:\Users\PressFtoPayRespeck\Source\Repos\PseudoPolar\obj\Debug\Polar.exe
+C:\Users\PressFtoPayRespeck\Source\Repos\PseudoPolar\obj\Debug\Polar.pdb

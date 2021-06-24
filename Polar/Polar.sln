@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polar", "Polar.csproj", "{764ED33C-03DD-470B-8F20-AB61D21BA953}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{764ED33C-03DD-470B-8F20-AB61D21BA953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764ED33C-03DD-470B-8F20-AB61D21BA953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764ED33C-03DD-470B-8F20-AB61D21BA953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764ED33C-03DD-470B-8F20-AB61D21BA953}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE71D9A1-45A6-424B-8C1F-E4A9CD431A65}
+	EndGlobalSection
+EndGlobal
