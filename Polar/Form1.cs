@@ -50,7 +50,6 @@ namespace Polar
             if (!int.TryParse(textBoxXmax.Text, out xMax)) MessageBox.Show("Некорректное значение X max");
             if (!int.TryParse(textBoxYmin.Text, out yMin)) MessageBox.Show("Некорректное значение Y min");
             if (!int.TryParse(textBoxYmax.Text, out yMax)) MessageBox.Show("Некорректное значение Y max");
-            if (!int.TryParse(textBox2.Text, out x1)) MessageBox.Show("Некорректное значение X1");
             panel2.Refresh();
         }
 
