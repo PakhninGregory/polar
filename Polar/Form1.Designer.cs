@@ -46,9 +46,6 @@ namespace Polar
             this.textBoxXmax = new System.Windows.Forms.TextBox();
             this.textBoxYmax = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -100,6 +97,34 @@ namespace Polar
             this.label4.TabIndex = 4;
             this.label4.Text = "Y max";
             // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 23);
+            this.label5.TabIndex = 24;
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.TabIndex = 25;
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(0, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 23);
+            this.label7.TabIndex = 23;
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(0, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(100, 23);
+            this.label8.TabIndex = 22;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -135,6 +160,7 @@ namespace Polar
             this.textBoxXmin.Size = new System.Drawing.Size(50, 20);
             this.textBoxXmin.TabIndex = 12;
             this.textBoxXmin.Text = "-10";
+            this.textBoxXmin.TextChanged += new System.EventHandler(this.textBoxXmin_TextChanged);
             // 
             // textBoxYmin
             // 
@@ -151,6 +177,7 @@ namespace Polar
             this.textBoxXmax.Size = new System.Drawing.Size(50, 20);
             this.textBoxXmax.TabIndex = 14;
             this.textBoxXmax.Text = "10";
+            this.textBoxXmax.TextChanged += new System.EventHandler(this.textBoxXmax_TextChanged);
             // 
             // textBoxYmax
             // 
@@ -162,35 +189,10 @@ namespace Polar
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(300, 33);
+            this.textBox2.Location = new System.Drawing.Point(0, 0);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(50, 20);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.Text = "0";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(300, 92);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(50, 20);
-            this.textBox4.TabIndex = 17;
-            this.textBox4.Text = "0";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(426, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(50, 20);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.Text = "1";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(427, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(50, 20);
-            this.textBox3.TabIndex = 19;
-            this.textBox3.Text = "1";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 25;
             // 
             // textBox5
             // 
@@ -213,7 +215,7 @@ namespace Polar
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 389);
+            this.panel2.Size = new System.Drawing.Size(1080, 939);
             this.panel2.TabIndex = 22;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             this.panel2.Resize += new System.EventHandler(this.panel2_Resize);
@@ -227,12 +229,9 @@ namespace Polar
             this.Pakhnin_proj.Controls.Add(this.textBox5);
             this.Pakhnin_proj.Controls.Add(this.label10);
             this.Pakhnin_proj.Controls.Add(this.label2);
-            this.Pakhnin_proj.Controls.Add(this.textBox3);
             this.Pakhnin_proj.Controls.Add(this.textBoxYmin);
             this.Pakhnin_proj.Controls.Add(this.label9);
-            this.Pakhnin_proj.Controls.Add(this.textBox1);
             this.Pakhnin_proj.Controls.Add(this.label3);
-            this.Pakhnin_proj.Controls.Add(this.textBox4);
             this.Pakhnin_proj.Controls.Add(this.label8);
             this.Pakhnin_proj.Controls.Add(this.textBoxXmax);
             this.Pakhnin_proj.Controls.Add(this.textBox2);
@@ -242,9 +241,9 @@ namespace Polar
             this.Pakhnin_proj.Controls.Add(this.label5);
             this.Pakhnin_proj.Controls.Add(this.label6);
             this.Pakhnin_proj.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Pakhnin_proj.Location = new System.Drawing.Point(0, 389);
+            this.Pakhnin_proj.Location = new System.Drawing.Point(0, 939);
             this.Pakhnin_proj.Name = "Pakhnin_proj";
-            this.Pakhnin_proj.Size = new System.Drawing.Size(800, 141);
+            this.Pakhnin_proj.Size = new System.Drawing.Size(1080, 141);
             this.Pakhnin_proj.TabIndex = 23;
             this.Pakhnin_proj.TabStop = false;
             this.Pakhnin_proj.Text = "Pakhnin_proj";
@@ -253,7 +252,7 @@ namespace Polar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 800);
+            this.ClientSize = new System.Drawing.Size(1080, 1080);
             this.Controls.Add(this.panel2);
             this.Controls.Add(panel1);
             this.Controls.Add(this.Pakhnin_proj);
@@ -284,9 +283,6 @@ namespace Polar
         private System.Windows.Forms.TextBox textBoxXmax;
         private System.Windows.Forms.TextBox textBoxYmax;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Panel panel2;

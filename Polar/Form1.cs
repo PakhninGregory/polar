@@ -14,10 +14,25 @@ namespace Polar
         private int dx, dy;
         private int x0, y0;
 
-        private float x11, x12, y11, y12;
         private int x1, x2, y1, y2;
 
+        private void textBoxXmax_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void textBoxXmin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -36,9 +51,6 @@ namespace Polar
             if (!int.TryParse(textBoxYmin.Text, out yMin)) MessageBox.Show("Некорректное значение Y min");
             if (!int.TryParse(textBoxYmax.Text, out yMax)) MessageBox.Show("Некорректное значение Y max");
             if (!int.TryParse(textBox2.Text, out x1)) MessageBox.Show("Некорректное значение X1");
-            if (!int.TryParse(textBox4.Text, out y1)) MessageBox.Show("Некорректное значение Y1");
-            if (!int.TryParse(textBox1.Text, out x2)) MessageBox.Show("Некорректное значение X2");
-            if (!int.TryParse(textBox3.Text, out y2)) MessageBox.Show("Некорректное значение Y2");
             panel2.Refresh();
         }
 
@@ -86,7 +98,7 @@ namespace Polar
                 x12 = xp;
                 y12 = yp;
 
-                e.Graphics.DrawLine(Pens.Crimson, (float)(x0 + x11 * dx), (float)(y0 - y11 * dy), (float)(x0 + x12 * dx), (float)(y0 - y12 * dy));
+                e.Graphics.DrawLine(Pens.Purple, (float)(x0 + x11 * dx), (float)(y0 - y11 * dy), (float)(x0 + x12 * dx), (float)(y0 - y12 * dy));
             }
 
 
@@ -95,7 +107,6 @@ namespace Polar
             xp = r * Math.Cos(F * Math.PI / 180);
             yp = r * Math.Sin(F * Math.PI / 180);
 
-            e.Graphics.DrawLine(Pens.Crimson, x0 + x1 * dx, y0 - y1 * dy, (float)(x0 + xp * dx), (float)(y0 - yp * dy));
             e.Graphics.DrawLine(Pens.Black, 0, y0, panel2.Width, y0);
             e.Graphics.DrawLine(Pens.Black, x0, 0, x0, panel2.Height);
 
